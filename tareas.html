@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tareas</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body style="background-color: darkcyan;">
+  
+  <!-- Apartado para tareas pendientes -->
+  <h2 style="margin-top: 15px;margin-left: 15px;">Tareas pendientes por añadir</h2>
+  <ul id="tareas-pendientes">
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Hacer la compra</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Ir al supermercado a hacer la compra</h6>
+          <p class="card-text">Descripción</p>
+        </div>
+      </div>
+  </ul>
+  
+  <!-- Zonas para los días de la semana -->
+  
+  <table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">Días</th>
+        <th scope="col">Tarea 1</th>
+        <th scope="col">Tarea 2</th>
+        <th scope="col">Tarea 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Lunes</th>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">Martes</th>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">Miércoles</th>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">Jueves</th>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">Viernes</th>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">Sábado</th>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">Domingo</th>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <!-- Botones para añadir una tarea -->
+  <div class="card" style="width: 22rem; height: 29rem; margin-left: 250px; margin-top: 50px; display: inline-flex; border-width: 2px; border-color:darkgrey;background-color: cadetblue;">
+    <div class="card-body">
+        <h2>Añadir tarea</h2>
+  <form id="form-nueva-tarea">
+    <label for="nombre-tarea">Nombre:</label>
+    <input type="text" name="nombre-tarea" id="nombre-tarea" required><br>
+    
+    <label for="descripcion-tarea">Descripción:</label>
+    <textarea name="descripcion-tarea" id="descripcion-tarea" required style="margin-top: 20px;"></textarea><br>
+    
+    <label for="hora-inicio-tarea">Hora de inicio:</label>
+    <input type="time" name="hora-inicio-tarea" id="hora-inicio-tarea" required><br>
+    
+    <label for="hora-fin-tarea">Hora de finalización:</label>
+    <input type="time" name="hora-fin-tarea" id="hora-fin-tarea" required><br>
+    
+    <label for="terminada">¿Terminada?</label>
+    <input type="checkbox" name="terminada" id="terminada"><br>
+    
+    <label for="campo-extra-1">Campo extra:</label>
+    <input type="text" name="campo-extra-1" id="campo-extra-1"><br>
+    
+    <label for="campo-extra-2">Campo extra:</label>
+    <input type="text" name="campo-extra-2" id="campo-extra-2"><br>
+  </form>
+  
+  <a href="#" class="btn btn-primary" style="display: inline-flexbox;margin-left: 125px;margin-top: 25px;">Añadir</a>
+
+    </div>
+  </div>
+  <!-- Modal para modificar una tarea -->
+  <div class="card" style="width: 22rem; height: 29rem; margin-left: 250px; margin-top: 50px; display: inline-flex; border-width: 2px; border-color:darkgrey;background-color: cadetblue;">
+    <div class="card-body">
+        <h2>Modificar tarea</h2>
+  <form id="form-nueva-tarea">
+    <label for="nombre-tarea">Nombre:</label>
+    <input type="text" name="nombre-tarea" id="nombre-tarea" required><br>
+    
+    <label for="descripcion-tarea">Descripción:</label>
+    <textarea name="descripcion-tarea" id="descripcion-tarea" required style="margin-top: 20px;"></textarea><br>
+    
+    <label for="hora-inicio-tarea">Hora de inicio:</label>
+    <input type="time" name="hora-inicio-tarea" id="hora-inicio-tarea" required><br>
+    
+    <label for="hora-fin-tarea">Hora de finalización:</label>
+    <input type="time" name="hora-fin-tarea" id="hora-fin-tarea" required><br>
+    
+    <label for="terminada">¿Terminada?</label>
+    <input type="checkbox" name="terminada" id="terminada"><br>
+    
+    <label for="campo-extra-1">Campo extra:</label>
+    <input type="text" name="campo-extra-1" id="campo-extra-1"><br>
+    
+    <label for="campo-extra-2">Campo extra:</label>
+    <input type="text" name="campo-extra-2" id="campo-extra-2"><br>
+  </form>
+  
+  <a href="#" class="btn btn-primary" style="display: inline-flexbox;margin-left: 40px;margin-top: 25px;">Modificar</a>
+  <a href="#" class="btn btn-danger" style="display: inline-flexbox;margin-left: 40px;margin-top: 25px;">Eliminar</a>
+
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+    
